@@ -1,0 +1,90 @@
+/*=================================================
+    Topbar
+=================================================*/
+@media only screen and (max-height: 480px) {
+  .topbar__brand.active {
+    filter: invert(100%);
+    transition: filter 1s;
+  }
+}
+
+/*=================================================
+    Navigation - side menu
+=================================================*/
+@media only screen and (max-height: 576px) {
+  .sidemenu {
+    font-size: 85%;
+  }
+}
+@media only screen and (max-height: 480px) {
+  .sidemenu {
+    right: -100vw;
+    width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .sidemenu__list-item {
+    flex-flow: row wrap;
+  }
+  .sidemenu__list-item > li {
+    width: 40vw;
+  }
+}
+@media only screen and (max-height: 425px) {
+  .sidemenu__list-title {
+    margin-bottom: 1rem;
+  }
+  .sidemenu__language-title {
+    margin-bottom: 0.6rem;
+  }
+}
+@media only screen and (max-height: 375px) {
+  .sidemenu {
+    padding-bottom: 1rem;
+    font-size: 75%;
+  }
+}
+@media only screen and (max-height: 320px) {
+  .sidemenu__language {
+    display: none;
+  }
+}
+
+/*=================================================
+    Main section
+=================================================*/
+@media only screen and (max-height: 576px) {
+  .main__control, .main__content-item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-height: 480px) {
+  .main__control-arrow {
+    display: none;
+  }
+  .main__content-item {
+    padding-top: 5.4rem;
+    padding-bottom: 5rem;
+  }
+  .main__content-item--first > div:first-child > img {
+    width: min(min(280px, 74.86vw), 59.776731vh);
+    min-width: 0;
+    margin-bottom: 0rem;
+  }
+  .main__content-item--first > div:last-child > img {
+    width: min(min(30px, 8.02vw), 5.859118vh);
+    min-width: 0;
+    margin-top: -2rem;
+  }
+  .main__content-item--second > div:first-child > img {
+    width: min(min(30px, 8.02vw), 5.859118vh);
+    min-width: 0px;
+    margin-top: -1rem;
+  }
+  .main__content-item--second > div:last-child > img {
+    width: min(min(280px, 74.86vw), 58.582656vh);
+    min-width: 0;
+    margin-bottom: 0rem;
+  }
+}/*# sourceMappingURL=responsive-landscape.css.map */

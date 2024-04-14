@@ -1,0 +1,72 @@
+/* sourceMappingURL=responsive.css.map */
+
+/*=================================================
+    Topbar
+=================================================*/
+@media only screen and (max-width: 480px) {
+  .topbar__brand.active {
+    filter: invert(100%);
+    transition: filter 1s;
+  }
+}
+
+/*=================================================
+    Navigation - side menu
+=================================================*/
+@media only screen and (max-width: 480px) {
+  .sidemenu {
+    right: -100vw;
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .sidemenu {
+    padding-left: 2.5rem;
+    font-size: 85%;
+  }
+}
+
+/*=================================================
+    Main section
+=================================================*/
+@media only screen and (max-width: 576px) {
+  .main__control, .main__content-item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main__control-arrow {
+    display: none;
+  }
+  .main__content-item {
+    padding-top: 5.4rem;
+    padding-bottom: 5rem;
+  }
+  .main__content-item--first > div:first-child > img {
+    width: min(min(280px, 74.86vw), 59.776731vh);
+    min-width: 0;
+    margin-bottom: 1rem;
+  }
+  .main__content-item--first > div:last-child > img {
+    width: min(min(30px, 8.02vw), 5.859118vh);
+    min-width: 0;
+    margin-top: -2rem;
+  }
+  .main__content-item--second > div:first-child > img {
+    width: min(min(30px, 8.02vw), 5.859118vh);
+    min-width: 0px;
+    margin-top: -1rem;
+  }
+  .main__content-item--second > div:last-child > img {
+    width: min(min(280px, 74.86vw), 58.582656vh);
+    min-width: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .footer-copyright, .footer .icon-instagram {
+    display: none;
+  }
+}

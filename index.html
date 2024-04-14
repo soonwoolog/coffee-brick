@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<meta property="og:title" content="COFFEE BRICK">
+	<title>COFFEE BRICK</title>
+	<!-- Favicon -->
+	<link href="images/favicon.ico" rel="icon">
+	<!-- Style sheet -->
+	<link rel="stylesheet" href="assets/css/font.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/responsive.css" />
+	<link rel="stylesheet" href="assets/css/responsive-landscape.css" />
+	<!-- Google Web Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Josefin+Sans&family=Poppins&display=swap">
+	<!-- Scripts -->
+	<script src="assets/scripts/app.js" type="text/javascript"></script>
+	<script src="assets/scripts/gsap.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!-- Loading screen -->
+	<!-- <div id="load" class="load">
+    <div>
+      <p class="load__text" move="up">WE</p>
+    </div>
+    <div>
+      <p class="load__text load__text--highlight" move="up-slide">FILL</p>
+    </div>
+    <div>
+      <p class="load__text" move="delayed-up">HAPPINESS</p>
+      <p class="load__text load__trigger" move="up-away">COFFEE</p>
+    </div>
+  </div> -->
+
+	<!-- Notibar -->
+	<!-- For hide, add class 'hidden' -->
+	<div id="alert" class="alert hidden">
+		<div class="alert__message">
+			여기에 경고문구가 들어갑니다
+		</div>
+		<div class="alert__button">&#XEA0F;</div>
+	</div>
+
+	<!-- Topbar -->
+	<div class="topbar">
+		<a class="topbar__brand" href="#"></a>
+		<div class="topbar__button">
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+	<!-- navbar -->
+	<nav id="sidemenu" class="sidemenu">
+		<ul class="sidemenu__list">
+			<li class="sidemenu__list-title">Menu</li>
+			<ul class="sidemenu__list-item">
+				<li><a>COFFEE BRICK</a></li>
+				<li><a>MENU</a></li>
+				<li><a>GALLERY</a></li>
+				<li><a>EVENTS</a></li>
+				<li><a>ABOUT US</a></li>
+				<li><a>CONTACT</a></li>
+			</ul>
+		</ul>
+		<!-- <ul class="sidemenu__language">
+      <li class="sidemenu__language-title">Language</li>
+      <ul class="sidemenu__language-item">
+        <li><a>ENGLISH</a></li>
+        <li><a>한국어</a></li>
+      </ul>
+    </ul> -->
+	</nav>
+
+	<!-- Main -->
+	<header id="main" class="main auto" data-interval="3000">
+		<div class="main__container">
+			<div class="main__carousel">
+				<img class="main__carousel-item" src="images/main_01.jpg"></img>
+				<img class="main__carousel-item" src="images/main_02.jpeg"></img>
+				<img class="main__carousel-item" src="images/main_03.jpg"></img>
+				<img class="main__carousel-item" src="images/main_04.jpg"></img>
+				<img class="main__carousel-item" src="images/main_05.png"></img>
+			</div>
+			<div class="main__overlay"></div>
+			<div class="main__content">
+				<div class="main__content-item main__content-item--justify main__content-item--first">
+					<div class="main__item-bottom">
+						<img src="images/main_item_01.png">
+					</div>
+					<div class="main__item">
+						<img src="images/main_item_03.png">
+					</div>
+				</div>
+				<div class="main__content-item main__content-item--justify main__content-item--second">
+					<div class="main__item">
+						<img src="images/main_item_03.png">
+					</div>
+					<div class="main__item-bottom">
+						<img src="images/main_item_02.png">
+					</div>
+				</div>
+			</div>
+			<div class="main__control">
+				<a class="main__control-arrow main__control-arrow--prev">&#XE904;</a>
+				<a class="main__control-arrow main__control-arrow--next">&#XE904;</a>
+			</div>
+		</div>
+	</header>
+
+	<section id="brick" class="brick">
+		<div class="brick-title">The best</div>
+		<div class="brick-title">Korean style coffee shop</div>
+		<div class="brick-title">in Kitchener-waterloo region</div>
+	</section>
+
+	<!-- Menu -->
+	<section id="menu" class="menu">
+		<div class="brick-title">Check Our Tasty Menu</div>
+		<ul class="menu-list">
+			<li>
+				<a>All</a>
+			</li>
+			<li>
+				<a>Beverage</a>
+			</li>
+			<li>
+				<a>Bread</a>
+			</li>
+			<li>
+				<a>Specialty</a>
+			</li>
+		</ul>
+	</section>
+
+	<!-- Gallery -->
+	<section id="gallery" class="gallery">
+		<div class="brick-title">Look at our joyful stories</div>
+		<div class="gallery-container">
+			<!-- <div class="gallery-mover">
+          <ul class="gallery-list">
+            <li class="gallery-list__card">1</li>
+            <li class="gallery-list__card">2</li>
+            <li class="gallery-list__card">3</li>
+            <li class="gallery-list__card">4</li>
+            <li class="gallery-list__card">1</li>
+            <li class="gallery-list__card">2</li>
+            <li class="gallery-list__card">3</li>
+            <li class="gallery-list__card">4</li>
+          </ul>
+        </div> -->
+		</div>
+	</section>
+
+	<!-- Events -->
+	<section id="events" class="events">
+		<div class="brick-title">Check our special events</div>
+		<!-- <img src="images/events.jpg"> -->
+		<div class="brick-title">Best Photo Spot</div>
+	</section>
+
+	<!-- About -->
+	<section id="about" class="about">
+		<div class="brick-title">Coffee Brick Canada Inc.</div>
+		<!-- <img src="_mockup/images/story_2.jpg"> -->
+	</section>
+
+	<!-- Contact -->
+	<section id="contact" class="contact">
+		<div class="brick-title">Get in touch</div>
+		<div class="contact-icon-box">
+			<span class="icon-location"></span>
+			<div class="contact-icon-title">Location</div>
+			<div class="contact-icon-desc">410 Conestogo Rd W, Waterloo, ON, N2L 4E2</div>
+		</div>
+		<div class="contact-icon-box">
+			<span class="icon-clock"></span>
+			<div class="contact-icon-title">Open Hours</div>
+			<div>SUN - SAT 10AM - 10PM</div>
+		</div>
+		<div class="contact-icon-box">
+			<span class="icon-envelope"></span>
+			<div class="contact-icon-title">Email</div>
+		</div>
+		<div class="contact-icon-box">
+			<span class="icon-phone"></span>
+			<div class="contact-icon-title">Call</div>
+			<div>+1 (289) 500-7666</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer" class="footer">
+		<a class="footer-logo"></a>
+		<div class="footer-copyright">
+			Copyright &#169; 2024 All rights reserved. | Designed by vulastic.
+		</div>
+		<a class="icon-instagram" href="https://www.instagram.com/coffeebrick_ca"></a>
+	</footer>
+</body>
+
+</html>
